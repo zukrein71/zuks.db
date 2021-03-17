@@ -1,0 +1,34 @@
+{
+    "name": "zuks.db",
+    "version": "1.0.0",
+     "description": "Kullanımı Kolay Türkçe Json database",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "clear && nodemon test/test.js",
+        "lint": "eslint src --fix"
+    },
+      "keywords": [
+    "quick.db",
+    "database",
+    "discord.js",
+    "zuks.db",
+    "turkish",
+    "json"
+  ],
+
+    "author": "Zukrein",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zukrein71/zuks.db"
+    },
+    "dependencies": {
+         "events": "^3.3.0",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+    }
+    
+}

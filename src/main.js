@@ -106,6 +106,7 @@ async add(key, value) {
   
 }
 //Substrack belirlenen veriden çıkartma yapar
+
 async subtract(key, value) {
   if (!key) throw new ReferenceError("Key girmediğinden hata alıyorum. Eğer hala çözemiyorsan https://discord.gg/gfEQXM8Zw5")
   if (!value) throw new ReferenceError("Value desteklenmiyor")

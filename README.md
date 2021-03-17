@@ -17,5 +17,6 @@ db.push("key","value")
 db.subtract("key",10) //key isimli veriden 10 çıkartır
 ```
 #### Gelişmekte olan database modulu
-Gün geçtikçe gelişmekte !"# zuks.db" 
-"# zuks.db" 
+Gün geçtikçe gelişmekte !
+
+asdasd

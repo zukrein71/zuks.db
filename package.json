@@ -1,6 +1,6 @@
 {
     "name": "zuks.db",
-    "version": "1.0.0",
+    "version": "1.0.2",
      "description": "Kullanımı Kolay Türkçe Json database",
     "main": "index.js",
     "directories": {
@@ -16,7 +16,13 @@
     "discord.js",
     "zuks.db",
     "turkish",
-    "json"
+    "json",
+"jsondb",
+"local",
+"localstorage",
+"local storage",
+"node-json-db",
+"db"
   ],
 
     "author": "Zukrein",

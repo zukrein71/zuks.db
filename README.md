@@ -18,5 +18,3 @@ db.subtract("key",10) //key isimli veriden 10 çıkartır
 ```
 #### Gelişmekte olan database modulu
 Gün geçtikçe gelişmekte !
-
-asdasd

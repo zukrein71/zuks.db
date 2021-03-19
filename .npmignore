@@ -1,4 +1,3 @@
 node_modules
-/*.log
-database.json
-test
+.gitignore
+package-lock

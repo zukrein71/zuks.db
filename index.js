@@ -1,4 +1,3 @@
-const Database = require("./src/main.js");
-module.exports = {
-    Database,
-};
+const Database = require("./src/main");
+
+module.exports = {Database};

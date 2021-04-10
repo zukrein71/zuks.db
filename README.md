@@ -2,95 +2,86 @@
 ![Image](https://nodei.co/npm/zuks.db.png?downloads=true&downloadRank=true&stars=true)
 
 # **ZUKS.DB**
-### Zuks.db nedirmi?
-Kullanımı Kolay Türkçe Json database
-### Yenilikler
+### What is Zuks.db?
+Easy to Use Json and Yaml database
+### News
 ```
-- Back sistemi
-- Yeni Fonksiyonlar
+- Yaml support
 
 ```
-## Nasılmı Yüklenir
+## How to install ? 
 ```npm
 npm install  zuks.db
 ``` 
-### Nasılmı Kullanılır ?
+### How to Use ?
 ```js
-const {Database} = require("zuks.db")
-const db = new Database("Database") 
+const {JsonDatabase , YamlDatabase} = require("zuks.db")
+const db = new JsonDatabase("Database");
+const ydb = new YamlDatabase("Yamldatabase"); 
 ```
 
-# Fonksiyonlar
+# Methots
 ```js
-const { Database } = require("zuks.db");
-const  db  = new Database("Database");
-
-//Veri yi kayt etmek | veriyi çektirmek
-db.set(`zuks`"1")//zuks 1 verisini kayt eder
-
-db.fetch(`zuks1`)//zuks 1 verisini çektirir
-
-db.get(`zuks2`)//zuks2 verisinin değerini belirtir
-
-db.has(`zuks`)//zuks verisi varsa true yoksa false olarak verir
-
-//Veriyi silme 
-
-db.delete(`zuks`)//zuks adlı veriyi siler
-
-db.deleteEach(`zuks`)//zuks olan tüm verileri siler
-
-db.deleteKey(`zuks`)//zuks anahtarı ile başlayan verileri siler
-
-db.clear()//Database dosyasındaki tüm verileri siler
-
-//Veride Matematik işlemleri
-db.add(`zuks`,1)//zuks verisene 1 ekler
-
-db.subtract(`zuks`1)//zuks verisinden 1 çıkartır
-
-db.math(`zuks`,`*`,1)//zuks verisine çarpma işlemi yapar
-
-//Ve diğer işlemler
-db.remove()  
-
-db.push()//veriye array ekler
-
-db.fetchAll()//datadaki tüm verileri çeker
-
-db.all()//datadaki tüm verilerin sayısını çeker 
-
-db.destroy()//Database i siler
+const { JsonDatabase,YamlDatabase } = require("zuks.db");
+const  db  = new JsonDatabase("Database");
+db.set("zuks","1")
+//setting database
+db.fetch("zuks")
+//Retrieves data
+db.math("zuks","+","1")
+//Mathematical operation
+db.add("zuks","1")
+//adds to data
+db.subtract("zuks","1")
+//extracts from data
+db.remove("zuks")
+//remove data
+db.type("zuks")
+//indicates the type of data
+//exemple : "number","string","array"
+db.all()
+//pulls the database
+db.size()
+//database data count
+db.startsWith("zuks")
+//Retrieves data starting with zuks
+db.includes("zuks")
+//Retrieves the data named zuks in the data
+db.endsWith("zuks")
+//Retrieves data ending with data named Zuks
+db.push("zuks","hi")
+//Adds an array to the data
+db.delete("zuks")
+//deletes data
+db.has("zuks")
+//True if data exists, false otherwise
+db.arrayHas("zuks")
+//zuks = array = true
+//zuks x array = false
+db.fetchAll()
+//all database
+db.destroy()
+//delete database files
+db.get("zuks")
+//Retrieves data
+db.clear()
+//clear database
+db.exemple()
+//exemple database files
 ```
-# Yedek sistemi
-- Kullanımı bu şekilde
-```js
-const { Database } = require("zuks.db");
-const  db  = new Database("Database");
 
-db.setBackup('backup.json')//Backup yani yedek edilecek dosya
-```
-- Aldığınız yedeği burdan  aktifleştirebilirsiniz
+# Multi Database
 ```js
-const { Database } = require("zuks.db");
-const  db  = new Database("Database");
-
-db.loadBackup();//setlemiş olduğunuz backup dosyasını bulur ve geri yükler
-```
-# Çoklu database kullanabilirsiniz
-```js
-const { Database } = require("zuks.db");
-const  db  = new Database("Db");
-const  data  = new Database("data");
-const  config  = new Database("config");
+const { JsonDatabase,YamlDatabase } = require("zuks.db");
+const  db  = new JsonDatabase("Db");
+const  data  = new YamlDatabase("data");
+const  config  = new JsonDatabase("config");
 
 db.set(`Zuks`,"db")
 data.set(`Zuks`,"data")
 config.set(`Zuks`,"config")
 ```
 
-#### Gelişmekte olan database modulu
-Gün geçtikçe gelişmekte !
-
-[Discord](https://discord.gg/gfEQXM8Zw5)
+#### LİNKS
+[Discord](https://discord.gg/Qac4vGc8sA)
 

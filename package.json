@@ -1,7 +1,7 @@
 {
     "name": "zuks.db",
-    "version": "1.0.4",
-    "description": "Kullanımı Kolay Türkçe Json database",
+    "version": "1.0.7",
+    "description": "Easy to Use Json and Yaml database",
     "main": "index.js",
     "directories": {
         "test": "test"
@@ -17,11 +17,17 @@
         "zuks.db",
         "turkish",
         "json",
+        "yaml",
+        "yamldb",
         "jsondb",
         "local",
         "localstorage",
         "local storage",
         "node-json-db",
+        "node-yaml-db",
+        "bot database",
+        "easy database",
+        "easy",
         "db"
     ],
     "author": "Zukrein",
@@ -31,6 +37,7 @@
         "url": "https://github.com/zukrein71/zuks.db"
     },
     "dependencies": {
-        "fs": "0.0.1-security"
+        "fs": "0.0.1-security",
+        "yaml": "^1.10.2"
     }
 }

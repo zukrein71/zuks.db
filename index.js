@@ -1,3 +1,6 @@
-const Database = require("./src/main");
-
-module.exports = {Database};
+const JsonDatabase = require("./zuksmain/JsonDatabase");
+const YamlDatabase = require("./zuksmain/YamlDatabase");
+module.exports = {
+JsonDatabase,
+YamlDatabase
+}

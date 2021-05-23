@@ -2,11 +2,11 @@
 ![Image](https://nodei.co/npm/zuks.db.png?downloads=true&downloadRank=true&stars=true)
 
 # **ZUKS.DB**
-### What is Zuks.db?
+### What is zuks.db?
 Easy to Use Json and Yaml database
 ### News
 ```
-- Yaml support
+- Yaml Support!!
 
 ```
 ## How to install ? 

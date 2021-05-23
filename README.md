@@ -11,7 +11,7 @@ Easy to Use Json and Yaml database
 ```
 ## How to install ? 
 ```npm
-npm install  zuks.db
+npm install zuks.db
 ``` 
 ### How to Use ?
 ```js
